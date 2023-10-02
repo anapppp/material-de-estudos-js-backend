@@ -69,8 +69,9 @@ Operador   | Resultado
 `!=`       | é diferente
 `!==`      | não é idêntico  
 `&&`       | comparador E
-`||`       | comparador OU
+`\|\|`       | comparador OU
 `!`        | negação
+
 
 
 
