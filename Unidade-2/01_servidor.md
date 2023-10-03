@@ -20,22 +20,30 @@ app.listen(3000);
 
 - com ele, não precisar ficar reestartando o serviodor
 
+
 ### Instalar o nodemom apenas para desenvolvimento 
 
-1. No terminal, use -D:
+No terminal, use -D:
 
 ```
 npm install -D nodemon
-```  
+```
+### Iniciar um projeto com configurações *default*
 
-2. No arquivo package.json altere a seguinte linha:
+Digite no terminal:
+
+```
+npm init -y
+```
+
+No arquivo package.json altere a seguinte linha:
 ```
   "scripts": {
     "dev": "nodemon ./index.js"   
   },
 ```
 
-3. Executar o script criado dev no terminal 
+Executar o script criado no terminal 
 
 ```
 npm run dev
@@ -146,3 +154,16 @@ const intermediarioDaRota (req, res, next) => {
 
 app.get('/home', intermediarioDaRota, funcaoControladora)
 ```
+# Passo a passo para criar um servidor
+
+1. Criar arquivos e diretórios
+  1.1 ./src/index.js
+  1.2 ./src/rotas.js
+  1.3 ./src/DB/bancodedados.js
+  1.4 ./src/controladores/controlador1.js
+  1.5 etc...
+2. Instalar express
+3. Instalar Nodemon
+4. Configurar Nodemon
+5. `const express = require("express");`
+     
