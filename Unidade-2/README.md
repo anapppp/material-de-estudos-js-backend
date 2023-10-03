@@ -1,5 +1,5 @@
 # Unidade 2
 
-  - [Servidores](./Unidade-2/01_servidor.md/)
-  - [API REST](./Unidade-2/02_API.md/)
-  - [Programação assíncrona](./Unidade-2/03_programacao_assincrona.md/)
+  - [Servidores](01_servidor.md)
+  - [API REST](02_API.md)
+  - [Programação assíncrona](03_programacao_assincrona.md)
