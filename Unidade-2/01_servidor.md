@@ -154,3 +154,16 @@ const intermediarioDaRota (req, res, next) => {
 
 app.get('/home', intermediarioDaRota, funcaoControladora)
 ```
+# Passo a passo para criar um servidor
+
+1. Criar arquivos e diretórios
+  1.1 ./src/index.js
+  1.2 ./src/rotas.js
+  1.3 ./src/DB/bancodedados.js
+  1.4 ./src/controladores/controlador1.js
+  1.5 etc...
+2. Instalar express
+3. Instalar Nodemon
+4. Configurar Nodemon
+5. `const express = require("express");`
+     
