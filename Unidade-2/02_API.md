@@ -30,9 +30,7 @@
 - PATCH: altera uma parte do recurso na coleção
 - DELETE: excluir o recurso da  coleção
 
-```
-GET /livros/3  //acessa o recurso 3
-```
+
 
 # Status code
 
@@ -41,6 +39,8 @@ Código | Status geral
 2xx | Sucesso         
 4xx | Erro do Cliente 
 5xx | Erro do servidor
+
+Alguns códigos comumente utilizados são:
 
 Código | Status
  ---| ----
