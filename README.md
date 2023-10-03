@@ -1,10 +1,10 @@
-# ✍️ Material de estudo de JavaScript com aplicação Backend
+# ✍️ Anotações - JavaScript com aplicação Backend
 
 Essas são as minhas anotações sobre JavaScript para aplicação no lado do servidor (backend). Boa parte delas eu fiz durante o curso de desenvolvimento de software com foco em backend da [Cubos Academy](https://cubos.academy/cursos/desenvolvimento-de-software). 
 
 Por se tratar apenas de anotações, e não de um material para divulgação, talvez, alguns conteúdos que já eram óbvios para mim não tenham sido anotados. Além disso, o material pode conter erros, que são de minha total respoonsabilidade. 
 
-Sinta-se livre para usar essas anotações da forma que preferir. E, caso tenha alguma correção ou sugestão, sinta-se livre pra fazer um *pull request*. 
+Sinta-se livre para usar essas anotações da forma que preferir. E, caso tenha alguma correção ou sugestão, sinta-se livre para abrir um *issue* ou fazer um *pull request*. 
 
 Vamos lá!  🤓
 
