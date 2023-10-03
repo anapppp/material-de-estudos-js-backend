@@ -90,24 +90,6 @@ const soma = (x,y) => {
 
 > Caso a função seja declarada depois do seu chamamento, a declaração da função e sua implementação são completamente movidas para o topo do escopo, impedindo erros. A isso chamamos de *hoisting*. 
 
-## Métodos
-
-São funções definidas dentro de objetos.
-
-```
-cont pessoa = {
-   nome: "Jose",
-   idade: 30,
-   apresentar: funtion () { 
-        console.log(`ola ${this.nome}`)   
-      },
-}
-
-pessoa.apresentar();
-```
-
-> `this` é uma palavra reservada para se referir ao próprio objeto.
-
 
 
 

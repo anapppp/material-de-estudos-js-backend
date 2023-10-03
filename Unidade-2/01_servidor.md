@@ -120,7 +120,7 @@ const {funcao1, funcao2} = require("./controladores/funcoes.js");
 
 ## Intermediários (Middlewares)
 
-### Middleware independente:
+### Middleware independente
 
 Para criar um intermediario independente usamos o método USE da biblioteca *express* . Nesse exemplo, antes de passar pela ```rota 1```, o intermediario ```app.use``` vai ser verificado.
 
@@ -133,7 +133,7 @@ app.use((req,res,next)=> {
 app.get( ... rotas 1...)
 ```
                
- ## Middlewares da rota
+ ### Middlewares da rota
 
 Também é possível chamar um intermediario dentro da rota. Nesse caso não usamos o método USE, e sim, uma função que entra como segundo arguento no método GET, antes da função controladora. 
 

@@ -19,6 +19,7 @@ Vamos lá!  🤓
   - [Comandos do Terminal](./Unidade-1/00_comandos_do_terminal.md/) 
   - [Comandos básicos do Java Script](./Unidade-1/01_comandos_basico_JavaScript.md/) 
   - [Objetos e funções](./Unidade-1/02_objetos_e_funcoes.md/)
+  - [Métodos](./Unidade-1/03_metodos.md/)
 
   
 - [Unidade 2](./Unidade-2/)
