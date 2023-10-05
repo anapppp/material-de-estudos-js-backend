@@ -23,11 +23,12 @@ Comandos                | Descrição
 `git branch -m master main` | altera o nome da branch de master para main
 `git commit --amend -m "nova mensagem"` | Altera um commit e atualiza os arquivos que estavam no stage
 `git --h`               | Help!
-
-
+`git remote add upstream https://github.com/REPOSITORIO`  |  para manter seu repositório local atualizado:
+`git pull upstream main`  |  baixa e mescla as alterações no seu repositório local com base na branch main deste repositório original 
+`git checkout -b feat/community/seunomedeusuario`   |    cria uma nova branch
 
 ##  Status no GIT
 
+> **not staged:** quando o usuário alterou arquivos mas não adicionou para o stage 
 
-- **not staged:** quando o usuário alterou arquivos mas não adicionou para o stage 
-- **staged:** quando a pasta ou arquivo já foi adicionado ao stage pelo `git add`, e está pronto para comitar 
+> **staged:** quando a pasta ou arquivo já foi adicionado ao stage pelo `git add`, e está pronto para comitar 
