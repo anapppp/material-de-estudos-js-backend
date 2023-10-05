@@ -93,6 +93,23 @@ app.get(`/`, async(req, res) => {
 Nesse exemplo, agora a variável `promessa` contém um array com os resultados da busca de `cidade1` e `cidade2`.
 
 
+# Try Catch Finally
 
+- Bloco Try: todo o codigo que estiver ali é executado por inteiro
+- Bloco Catch: caso haja algum erro, ele é capturado pelo catch
+- Bloco Finally: Sempre é executado depois do try e do catch, independentemente se houve erro ou não. 
 
+Exemplo para leitura de arquivos:
+
+```
+try{
+    const arquivo = await fs.readFile(`arquivo.txt`)
+    console.log(arquivo)
+} catch (erro){
+    console.log(erro.message);
+} finally{
+    console.log("Essa mensagem sempre será exibida.")
+}
+```
+Normalmente usamos `try` e `catch` em funções assíncronas.
 

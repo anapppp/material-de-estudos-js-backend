@@ -26,6 +26,8 @@ Vamos lá!  🤓
   - [Servidores](./Unidade-2/01_servidor.md/)
   - [API REST](./Unidade-2/02_API.md/)
   - [Programação assíncrona](./Unidade-2/03_programacao_assincrona.md/)
+  - [Datas em JS](./Unidade-2/04_datas_em_JS.md)
+  - [Leitura e escrita em arquivos](./Unidade-2/05_leitura_e_escrita_em_arquivo.md)
 
 
 -----
