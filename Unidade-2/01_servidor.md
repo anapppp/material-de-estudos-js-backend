@@ -84,7 +84,7 @@ O que vier depois da interrogacao é uma query param.
 
 Para criar mais de um parâmetro, utiliza-se o *&*
 
-<http://localhost:3000/professores?nome=Guido&stack=Backend>
+<http://localhost:3000/professores/?nome=Guido&stack=Backend>
 
 Para recuperar o parâmetro do servidor, usamos:
 
