@@ -1,8 +1,10 @@
 # Consultas SQL
 
 
-<img src="https://banner2.cleanpng.com/20190210/grw/kisspng-postgresql-database-dump-query-language-5c605154daae60.2394885715498161488957.jpg" width ="200" >
+<img src="https://github.com/anapppp/material-de-estudos-js-backend/assets/70073296/eace3116-7637-4929-8dc3-86b48d1395ae" width ="200" >
 
-```
+
+```![postgre]()
+
 SELECT 
 ```
