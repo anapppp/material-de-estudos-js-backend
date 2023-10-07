@@ -16,10 +16,16 @@ Vamos lá!  🤓
 
 - [Unidade 1](./Unidade-1/)
   - [Comandos do Git](./Unidade-1/00_comandos_do_git.md/) 
-  - [Comandos do Terminal](./Unidade-1/00_comandos_do_terminal.md/) 
-  - [Comandos básicos do Java Script](./Unidade-1/01_comandos_basico_JavaScript.md/) 
+  - [Comandos do Terminal](./Unidade-1/00_comandos_do_terminal.md/)
+  - [Comandos básicos do Java Script](./Unidade-1/01_comandos_basico_JavaScript.md/#operadores) 
+     - [Operadores](./Unidade-1/01_comandos_basico_JavaScript.md/#operadores) 
+     - [Condicionais](./Unidade-1/01_comandos_basico_JavaScript.md/#condicionais)      
   - [Objetos e funções](./Unidade-1/02_objetos_e_funcoes.md/)
+    - [Objetos](./Unidade-1/02_objetos_e_funcoes.md/#objetos)
+    - [Funções](./Unidade-1/02_objetos_e_funcoes.md/#funções)    
   - [Métodos](./Unidade-1/03_metodos.md/)
+    - [Métodos de Arrays](./Unidade-1/03_metodos.md/#métodos-de-arrays)
+    - [Métodos de Strings](./Unidade-1/03_metodos.md/#métodos-de-string)    
 
   
 - [Unidade 2](./Unidade-2/)
@@ -28,6 +34,9 @@ Vamos lá!  🤓
   - [Programação assíncrona](./Unidade-2/03_programacao_assincrona.md/)
   - [Datas em JS](./Unidade-2/04_datas_em_JS.md)
   - [Leitura e escrita em arquivos](./Unidade-2/05_leitura_e_escrita_em_arquivo.md)
+
+- [Unidade 3](./Unidade-3/)
+  - [Consultas SQL](./Unidade-3/01_consultas_SQL.md)
 
 
 -----
