@@ -36,7 +36,10 @@ Vamos lá!  🤓
   - [Leitura e escrita em arquivos](./Unidade-2/05_leitura_e_escrita_em_arquivo.md)
 
 - [Unidade 3](./Unidade-3/)
-  - [Consultas SQL](./Unidade-3/01_consultas_SQL.md)
-
+  - [Resumo PostgreSQL](./Unidade-3/01_resumo_banco_de_dados_postgreSQL.md)
+  - [Consultas PostgreSQL](./Unidade-3/02_consultas_postgre_SQL.md)
+  - [Funções PostgreSQL](./Unidade-3/03_funcoes_PostgreSQL.md)
+  - [CRUD em PostgreSQL](./Unidade-3/04_CRUD_PostgreSQL.md)
+  - [Conexão Node.js com PostgreSQL](./Unidade-3/05_conexao_node_postgre.md)
 
 -----
