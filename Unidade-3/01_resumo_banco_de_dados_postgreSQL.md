@@ -1,4 +1,4 @@
-# SQL
+# Resumo de banco de dados com PostgreSQL
 
 Este material eu obtive da minha colega [Isa](https://github.com/IammCaz), também feito com base nas aulas da [Cubos Academy](https://cubos.academy/cursos/desenvolvimento-de-software). Acesse aqui o [repositorio original](https://github.com/IammCaz/resumo-de-ferramentas/blob/main/resumao-sql-postgrees.sql.sql).
 
