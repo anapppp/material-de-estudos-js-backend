@@ -1,9 +1,5 @@
 # Conexão Node.js com PostgreSQL
-
-
-<img align="center" width="350px" src="https://assets.northflank.com/Group_321_160b91d960.png">
-
-
+![Group_321_160b91d960](https://github.com/anapppp/material-de-estudos-js-backend/assets/70073296/d6a5bdeb-0d4f-4194-b846-380675ea5c97)
 
 ## Biblioteca `node-postgres`
 
