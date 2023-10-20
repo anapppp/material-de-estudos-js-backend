@@ -1,4 +1,5 @@
 # CRUD em PostgreSQL
+![](https://pbs.twimg.com/tweet_video_thumb/C81toHkXgAAZ7lB.jpg)
 
 > C = Create
 

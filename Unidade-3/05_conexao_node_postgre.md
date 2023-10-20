@@ -76,3 +76,62 @@ app.listen(3000);
 > Nas nossas aplicações *sempre* vamos  usar o `Pool()` por ser muito mais performático.
 
 > Vamos colocar todos os pools em um arquivo separado chamado `conexao.js`
+
+## Como passar valores dinâmicos na query
+
+> ⚠️ SQL Injection
+>> Se fizermos 
+>> ```
+>> const resultado = await pool.query(`select * from empresas where id=${id}`)
+>>```
+>> estamos sujeitos a um ataque hacdddker chamado **SQL Injection**. Basta passar na URL `http://localhost:3000/16 or 1=1` que todo o banco de dados 'e retornado.
+>> Por isso **NUNCA** fa'ca concatenacão dentro da string de requisição da query. 
+
+Para evitar ataques SQL Injection, faça dessa forma:
+
+````
+app.get('/:id', async (req, res) => {
+    const { id } = req.params
+    try {
+        // const resultado = await pool.query(`select * from empresas where id=${id}`)  // NAO FACA ISSO
+        const query = `select * from empresas where id=$1`;
+        const params = [id];
+        const resultado = await pool.query(query, params)
+        return res.json(resultado.rows);
+    } catch (error) {
+        console.log(error.message);
+    };
+});
+```
+
+## Paginação de resultados
+
+```
+const express = require('express');
+const app = express();
+app.use(express.json());
+const pool = require(`./conexao`)
+
+
+app.get('/', async (req, res) => {
+    const { pagina, porPagina } = req.query;
+    try {
+        const query = `select * from pessoas order by id asc limit $1 offset $2`;
+        const offset = pagina === 1 ? 0 : (pagina - 1) * porPagina;  // Se a pag == 1, offset =0; senao, offset=(pag-1)*porPagina
+        const params = [porPagina, offset];
+        const resultado = await pool.query(query, params);
+        const resultPrint = {
+            pagina,
+            porPagina,
+            numeroDeRegistros: resultado.rowCount,
+            registros: resultado.rows
+        }
+        return res.json(resultPrint);
+    } catch (error) {
+        console.log(error.message);
+    };
+});
+
+app.listen(3000);
+```
+
