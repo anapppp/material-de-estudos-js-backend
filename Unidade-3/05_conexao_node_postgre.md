@@ -85,7 +85,7 @@ app.listen(3000);
 
 Para evitar ataques SQL Injection, faça dessa forma:
 
-````
+```
 app.get('/:id', async (req, res) => {
     const { id } = req.params
     try {
