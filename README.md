@@ -1,6 +1,6 @@
 # ✍️ Anotações - JavaScript com aplicação Backend
 
-Essas são as minhas anotações sobre JavaScript para aplicação no lado do servidor (backend). Boa parte delas eu fiz durante o curso de desenvolvimento de software com foco em backend da [Cubos Academy](https://cubos.academy/cursos/desenvolvimento-de-software). 
+Essas são as minhas anotações sobre JavaScript para aplicação no lado do servidor (Backend). Boa parte delas eu fiz durante o curso de desenvolvimento de software com foco em backend da [Cubos Academy](https://cubos.academy/cursos/desenvolvimento-de-software). 
 
 Por se tratar apenas de anotações, e não de um material para divulgação, talvez, alguns conteúdos que já eram óbvios para mim não tenham sido anotados. Além disso, o material pode conter erros, que são de minha total respoonsabilidade. 
 
@@ -41,5 +41,6 @@ Vamos lá!  🤓
   - [Funções PostgreSQL](./Unidade-3/03_funcoes_PostgreSQL.md)
   - [CRUD em PostgreSQL](./Unidade-3/04_CRUD_PostgreSQL.md)
   - [Conexão Node.js com PostgreSQL](./Unidade-3/05_conexao_node_postgre.md)
+  - [Autenticação e Criptografia](./Unidade-3/06_autenticacao_e_criptografia.md)
 
 -----
