@@ -42,5 +42,6 @@ Vamos lá!  🤓
   - [CRUD em PostgreSQL](./Unidade-3/04_CRUD_PostgreSQL.md)
   - [Conexão Node.js com PostgreSQL](./Unidade-3/05_conexao_node_postgre.md)
   - [Autenticação e Criptografia](./Unidade-3/06_autenticacao_e_criptografia.md)
+  - [Integração com API de terceiros](./Unidade-3/07_integracao_com_API_de_terceiros.md)
 
 -----
