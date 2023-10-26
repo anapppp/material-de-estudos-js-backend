@@ -10,7 +10,7 @@ npm install bcrypt
 Documentação [aqui](https://www.npmjs.com/package/bcrypt#with-promises).
 
 Criar senha:
-```
+```javascript
 bcrypt.hash(myPlaintextPassword, saltRounds).then(function(hash) {
     // Store hash in your password DB.
 });
@@ -19,7 +19,7 @@ O parâmetro `saltRounds` está relacionao com o custo de processamento para cri
 
 Checar senha:
 
-```
+```javascript
 // Load hash from your password DB.
 bcrypt.compare(myPlaintextPassword, hash).then(function(result) {
     // result == true
@@ -31,7 +31,7 @@ bcrypt.compare(someOtherPlaintextPassword, hash).then(function(result) {
 
 ##  Cadastro de usuário usando criptografia
 
-```
+```javascript
 const cadastrarUsuario = async (req, res) => {
     const { nome, email, senha } = req.body
 
@@ -53,12 +53,12 @@ const cadastrarUsuario = async (req, res) => {
 
 Para login usa-se o verbo `POST`.
 
-``` 
+```javascript
 rotas.post('/login', login)
 ```
 
 Checando usuário e senha:
-```
+```javascript
 const login = async (req, res) => {
     const { email, senha } = req.body
     try {
@@ -89,7 +89,7 @@ npm install jsonwebtoken
 
 Para gerar um token:
 
-```
+```javascript
 jwt.sign(payload, secretOrPrivateKey, [options, callback])
 ```
 > `payload` é o que identifica o usuário. Pode ser o ID ou email, por exemplo.
@@ -100,7 +100,7 @@ jwt.sign(payload, secretOrPrivateKey, [options, callback])
 
 Exemplo:
 
-```
+```javascript
 const login = async (req, res) => {
     const { email, senha } = req.body
     try {
@@ -128,7 +128,7 @@ const login = async (req, res) => {
 
 Exemplo de verificação de token para dar acesso a listagem de um banco de dados. Não é recomendado enviar o token pelo body. Ao inves disso, vamos recuperar do cabeçalho (**header**) no formato Bearer token.
 
-```
+```javascript
 const listarCarros = async (req, res) => {
 	// recuperando o token do header do Bearer token
 	const { authorization } = req.headers;
@@ -150,7 +150,7 @@ const listarCarros = async (req, res) => {
 
 Criar no arquivo `./intermediarios/autenticacao.js` a funcao que verifica se o usuario está logado:
 
-```
+```javascript
 const jwt = require('jsonwebtoken')
 const senhaJwt = require('../senhaJwt')
 const pool = require('../conexao')
@@ -177,14 +177,14 @@ module.exports = verificarUsuarioLogado
 ```
 Agora voce pode incluir o middleware diretamente na rota:
 
-```
+```javascript
 rotas.get('/carro', verificarUsuarioLogado, listarCarros)
 ```
 
 Outra opção é incluir a funcao `verificarUsuarioLogado()` antes das rotas que pedem autenticação:
 
 
-```
+```javascript
 rotas.post('/usuario', cadastrarUsuario)
 rotas.post('/login', login)
 
