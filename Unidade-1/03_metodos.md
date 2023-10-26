@@ -2,7 +2,7 @@
 
 São funções definidas dentro de objetos.
 
-```
+```javascript
 cont pessoa = {
    nome: "Jose",
    idade: 30,
@@ -18,7 +18,7 @@ pessoa.apresentar();
 
 ## Métodos de string
 
-```
+```javascript
 frase = " Eu estou aprendendo a programar na Cubos Academy";
 
 console.log(frase.includes("Cubos", 3));  //procura a string dentro da string a partir do indice 3
@@ -35,7 +35,7 @@ console.log(String(10.05)) //transforma o numero em string
 
 ## Métodos de Arrays
 
-```
+```javascript
 array = ['a', 'b', 'c', 'd', 'e'];
 
 objeto = [{
@@ -61,12 +61,11 @@ array.join("_") //junta todos os itens do array em uma string seprado por "_". S
 array.concat(a)  //concatena a no array
 array.slice(1, 3)  //fatia entre os indices 1 e 3, 1 incluso, 3 excluso
 array.splice(a, b, c)   //a = a partir de onde vc quer mudar o array, b = qtos vc quer deletar, se nao colocar nada apaga tdo depois de a. RETORNA os itens removidos E MODIFICA o array modificado. c elementos pra adicionar a lista
-
 ```
 
 ## Funções Callbacks
 
-```
+```javascript
 const interval = setInterval(fundcao, 2000) ///executa a funaco a cada 2s
 clearInterval(interval)  //para o setInterval
 setTimeout(funcao, 5000) // executa a funcao apos 5s
@@ -76,15 +75,13 @@ array.find(funcaoteste)   // retorn o primeiro elemento do array que passar no t
 array.findIndex(funcaoteste)  //retorna o indice do primeiro elemento que pssar na funcao teste
 array.filter(funcaoteste) //retorna um array com todos os elementos que passem na funcao teste
 array.map(funcao) //retorna um novo array com o que retorna na funco para cada elemento do array
-
 ```
 
 ### Método `.sort()` 
 
 Se colocar um argumento positivo, a funcao inverte a ordem.Se entrar um argumento negativo, ele ordena a depois b
 
-```
-
+```javascript
 array.sort()  // ordena ela tabela UNICODE. Pode receber uma funcao callback
 array.sort((a, b) => a - b);   //ordena numeros em ordem crescente 
 array.sort((a, b) => b - a);   //ordena numeros em ordem decrescente
@@ -95,7 +92,7 @@ array.sort((a, b) => b.localeCompare(a));  // ordena strings em ordem alfabetica
 
 ### Método `.reduce()`
 
-```
+```javascript
 array.reduce((acumulador, valorAtual, índiceAtual, array) => LOGICA DE REDUCAO)
 
 array.reduce((acc, currentValue) => acc + currentValue, 0);  //soma todos os itens de um array
@@ -107,6 +104,5 @@ array.reduce((a, b) => a + b, 0);  //soma todos os itens de um array
 array.reduce((a, b) => Math.max(a, b), -Infinity); // encontra o valor maximo
 array.reduce((a, b) => Math.min(a, b), Infinity); //encontra o valor minimo
 array.reduce((a, b) => Math.max(a, b));  // Utilizando o método reduce para encontrar o maior valor 
-
 ```
 
