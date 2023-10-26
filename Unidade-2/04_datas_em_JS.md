@@ -2,14 +2,14 @@
 
 O Java Script tem o seguinte objeto para armazenar e manipular datas:
 
-```
+```javascript
 const momentoAtual = new Date()
 ```
 Este comando retorna o **momento** atual no formato ISO no **horário de Greenwich**.
 
 Para obter outras datas, utiliza-se o seguinte formato 
 
-```
+```javascript
 const ano = 2023, mes = 0, dia = 1;
 
 
@@ -30,7 +30,7 @@ Nesse exemplo é contablizado o momento atual no fuso 0 graus relativo ao fuso q
 
 > Para obter o timestamp coloque um `+` antes da data, ou usando o `.getTime()`.
 
-```
+```javascript
 const data = new Date(2023, 0, 1)
 
 console.log(+data);
@@ -39,14 +39,14 @@ console.log(data.getTime());
 
 Para converter um timestamp em data, use apenas um argumento em `new Date()`:
 
-```
+```javascript
 const data = new Date(dataEmTimestamp);
 console.log(data);
 ```
 
 Para comparar datas, use *sempre* o timestamp.
 
-```
+```javascript
 +(new Date(0)) === + (new Date());
 ```
 
