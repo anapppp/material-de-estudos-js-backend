@@ -7,18 +7,18 @@ Usamos a biblioteca nativa do Java Script *File System*.
  - utilizam funções callback
 
 Para importar a biblioteca:
- ```
+ ```javascript
  const fs = require(`fs`);
  ```
 
  Leitura de arquivo sincrono:
 
- ```
+ ```javascript
  const a = fs.readFileSync(`a.txt`).tostring();
  ```
 
  Leitura assíncrona
- ```
+ ```javascript
  fs.readFile(`a.txt`, (erro, data)=> {
     if(erro){
         //faca alguma coisa
@@ -30,7 +30,7 @@ Para importar a biblioteca:
 
  ## Requisições assíncronas com promisses
 
- ```
+ ```javascript
  const fs = require(`fs/promises`)
  ```
 
@@ -38,7 +38,7 @@ Para importar a biblioteca:
 
 Utiliza-se o comando `JSON.parse()`
 
- ```
+ ```javascript
  const fs = require(`fs/promises`)
 
  (async function () {
@@ -49,14 +49,14 @@ Utiliza-se o comando `JSON.parse()`
 
 ## Escrita de arquivos
 
-```
+```javascript
 fs.writeFile(''./src/a.txt, 'Olá')
 ```
 > Atenção: Essa comando sobrescreve o arquivo caso ele já exista.
 
 ### Escrevendo arquivos em JSON
 
-```
+```javascript
 const pessoasStringfy = JASON.stringfy(pessoas);
 await fs.writeFile(`./src/usuarios.json`, pessoasStringfy)
 ```
