@@ -13,7 +13,7 @@
 
 É uma forma de criar strings que permite a incorporação de expressões e variáveis diretamente dentro da string. É definida entre *crases* 
 
-```
+```javascript
 let idade = 35;
 console.log('Minha idade é ${idade}');
 ```
@@ -23,7 +23,7 @@ console.log('Minha idade é ${idade}');
 
 ## Escopo
 É a estrutura limtada entre chaves. 
-```
+```javascript
  { 
    ...escopo... 
  }
@@ -51,11 +51,11 @@ Operador    | Resultado
 Biblioteca de matemática nativa.
 
 Raiz quadrada: 
-```
+```javascript
 y = Math.sqrt (9);
 ``` 
 Potência:
-```
+```javascript
 y = Math.pow (2,3);
 ```
 
@@ -77,7 +77,7 @@ Operador   | Resultado
 
 ### Comando `if`
 
-```
+```javascript
 if{
    } else if{
       }else{
@@ -86,7 +86,7 @@ if{
 
 Se a condiçãoo tiver só uma linha, não precisa usar chaves
 
-```
+```javascript
 if
    condicao 1
 else
@@ -95,7 +95,7 @@ else
 
 Para condicionar o valor armazenado em uma variável, usa-se o *ternário*
 
-```
+```javascript
 const variavel = ( x === cond1 ? valorCondTrue : valorCondFalse ) 
 ```
 
@@ -103,13 +103,13 @@ const variavel = ( x === cond1 ? valorCondTrue : valorCondFalse )
 
 É possivel adicioinar elementos de diferentestipos em um array.
 
-```
+```javascript
 cont varArray = [1,2,3.3, "quatro"];
 ```
 
 O tamanho de um array é dado pela propriedade `length`
 
-```
+```javascript
 tamanhoDoArray = varArray.length
 ```
 
@@ -127,7 +127,7 @@ varArray.shift()        | remove o primeiro item da lista
 ## Loops
 
 Opção 1: 
-```
+```javascript
 let i=0;
   while( i<5 ){
    console.log(array[i]);
@@ -136,7 +136,7 @@ let i=0;
 ```
 
 Opção 2:
- ```
+```javascript
 for (let i=0; i<5; i++){
    console.log(array[i]);
 }
@@ -144,7 +144,7 @@ for (let i=0; i<5; i++){
 
 Opção 3:
 
-```
+```javascript
 for (let item of varArray){
    console.log("item");
 }
