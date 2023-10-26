@@ -17,7 +17,7 @@ Nesse exemplo, tenho uma API rodando na porta 3000 e estou buscando os dados ret
 
 > aqui se usa o verbo **GET**
 
-```
+```javascript
 const express = require('express')
 const app = express()
 const axios = require('axios')
@@ -36,7 +36,7 @@ Nesse exemplo, tenho uma API rodando na porta 3000 e estou cadastrando na API2, 
 
 > aqui se usa o verbo **POST**
 
-```
+```javascript
 const express = require('express')
 const app = express()
 const axios = require('axios')
@@ -61,7 +61,7 @@ A  URL http://localhost:3001/carros da API2 também usa o verbo POST, para iclui
 Podemos usar o `axios.create`  para criar uma instancia com todas as configurações, para reutilizá-la varias vezes na funcao armazenada.
 
 
-```
+```javascript
 // CRIANDO UMA INSTANCIA
 const instanciaAxios = axios.create({
     baseURL: "http://localhost:3001"    // domínio base da API que você quer se comunicar 
