@@ -2,7 +2,7 @@
 
 Em Java Script, define-se um objeto entre de chaves. Cada popriedade é definida com dois pontos ( `propriedade: valor`) e separadas por vírgula.
 
-```
+```javascript
 const pessoa = {
    nome: "José",
    altura: 1.73,
@@ -26,13 +26,13 @@ pessoa.nome = "José"
 ## Desestruturação ou Destructuring 
 
 Para desestruturar objetos: 
-```
+```javascript
 cont{nome, altura} = pessoa
 ```
 
 Também é possivel desestruturar arrays: 
 
-```
+```javascript
 cont [nome1, nome2] = listaDeNomes;
 ```
 
@@ -41,10 +41,10 @@ cont [nome1, nome2] = listaDeNomes;
 O operador spread, representado pelos três pontos (`...`),  é usado para "espalhar" os elementos de um array ou  objeto em outro.
 
 
->     spread ... espalhar        
+> spread ... espalhar        
 
 Exemplo 1:
-``` 
+```javascript
 const objetaoComTudo = {
    ...pessoa
    ...endereco
@@ -52,18 +52,16 @@ const objetaoComTudo = {
 ```
 
 Exemplo 2:
-```
+```javascript
 const arrayOriginal = [1, 2, 3];
 const arrayNovo = [...arrayOriginal, 4, 5];
 ```
 
 Exemplo 3:
 
-```
-
+```javascript
 let array = [0,1,2,3,4];
 const [a,b,...resto] = array   
-
 ```
 No exemplo acima, `a` e `b` recebem os dois primeiros itens do array, e `resto` recebe o resto do array.
 
@@ -71,7 +69,7 @@ No exemplo acima, `a` e `b` recebem os dois primeiros itens do array, e `resto` 
 # Funções
 
 Definindo uma função da forma tradicional:
-```
+```javascript
 fuction nomeDaFuncao (parametro1, parametro2) {  
    let resultado;
    return resultado;
@@ -82,7 +80,7 @@ fuction nomeDaFuncao (parametro1, parametro2) {
 
 Definindo uma função no formato *arrow function*:
 
-```
+```javascript
 const soma = (x,y) => {
    return x+y;
 }
