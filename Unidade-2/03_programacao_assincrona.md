@@ -31,13 +31,13 @@ npm install utils-playground
 
 Para buscar a cidade de um CEP:
 
-```
+```javascript
 const {getCityFromZipcode} = require(`utils-playground`);
 
 getCityFromZipcode(`12345678`).than( a => {console.log(`A cidade é $a`);}).catch( erro => {console.log(erro);})
 ```
 
-Os objetos ```.than()``` e ```.catch()``` tratam as pendências, respectivamente, se for resolvida ou rejeitada.
+Os objetos `.than()` e `.catch()` tratam as pendências, respectivamente, se for resolvida ou rejeitada.
 
 > `getCityFromZipcode(`12345678`)` é uma promessa.
 
@@ -47,14 +47,14 @@ Para executar uma função assíncrona apenas depois de outra função assíncro
 
 
 Vamos usar uma função anônima (sem nome), e dizer que ela é assíncrona usando ```async```:
-```
+```javascript
 async function (){
 
 }
 ```
 Agora vamos uma funções assincrona: 
 
-```
+```javascript
 async function (){
     const cidade = getCityFomZipcode(`82174657`);
     console.log(`cidade`);
@@ -64,7 +64,7 @@ async function (){
 
 Da forma como está escrito acima, a função ```console.log``` não espera a função ```getCityFromZicode``` terminar de executar, retornando o status pendente. Para esperá-la executar, vamos usar o ```await```.
 
-```
+```javascript
 async function (){
     const cidade = await getCityFomZipcode(`82174657`);
     console.log(`cidade`);
@@ -73,7 +73,7 @@ async function (){
 
 Para escrever uma função assíncrona usando o padrão *arrow function*, fazemos da seguinte forma.
 
-```
+```javascript
 const teste = async () => {}
 ```
 
@@ -81,7 +81,7 @@ const teste = async () => {}
 
 Essa função resolve várias promessas de uma única vez. Ela mesma é uma função assíncrona, por isso, podemos usar o `await` apenas nela. 
 
-```
+```javascript
 app.get(`/`, async(req, res) => {
     const  cidade1 = getCityFromZipcode(`12345678`)
     const  cidade2 = getCityFromZipcode(`87654321`)
@@ -101,7 +101,7 @@ Nesse exemplo, agora a variável `promessa` contém um array com os resultados d
 
 Exemplo para leitura de arquivos:
 
-```
+```javascript
 try{
     const arquivo = await fs.readFile(`arquivo.txt`)
     console.log(arquivo)
