@@ -13,7 +13,7 @@ npm install pg
 
 ## Conexão simples com o banco de dados usando `Client()`
 
-```
+```javascript
 const express = require('express');
 const app = express();
 const { Client } = require('pg');
@@ -43,7 +43,7 @@ app.listen(3000);
 
 ## Conxão com o banco de dados usanto `Pool()`
 
-```
+```javascript
 const express = require('express');
 const app = express();
 const { Pool } = require('pg');
@@ -77,7 +77,7 @@ app.listen(3000);
 
 > ⚠️ SQL Injection
 >> Se fizermos 
->> ```
+>> ```javascript
 >> const resultado = await pool.query(`select * from empresas where id=${id}`)
 >>```
 >> estamos sujeitos a um ataque hacdddker chamado **SQL Injection**. Basta passar na URL `http://localhost:3000/16 or 1=1` que todo o banco de dados 'e retornado.
@@ -85,7 +85,7 @@ app.listen(3000);
 
 Para evitar ataques SQL Injection, faça dessa forma:
 
-```
+```javascript
 app.get('/:id', async (req, res) => {
     const { id } = req.params
     try {
@@ -102,7 +102,7 @@ app.get('/:id', async (req, res) => {
 
 ## Paginação de resultados
 
-```
+```javascript
 const express = require('express');
 const app = express();
 app.use(express.json());
