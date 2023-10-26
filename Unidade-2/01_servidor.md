@@ -2,7 +2,7 @@
 
 ## Como criar um servidor
 
-```
+```javascript
 const express = require("express");
 const app = express();
 
@@ -37,7 +37,7 @@ npm init -y
 ```
 
 No arquivo package.json altere a seguinte linha:
-```
+```json
   "scripts": {
     "dev": "nodemon ./index.js"   
   },
@@ -57,7 +57,7 @@ https://insomnia.rest/download
 
 ## Parâmetros de rota
 
-```
+```javascript
 app.get(`/home/:exemplo_de_parametro_de_rota`, (req, res) => {
   res.send("Hello $req.params.exemplo_de_parametro_de_rota ");
   req.params
@@ -68,7 +68,7 @@ app.get(`/home/:exemplo_de_parametro_de_rota`, (req, res) => {
 Quando se digita no navegador < http://localhost/3000/home/XXX >, o parâmetro req possui um objeto que se chama
 
 
-```
+```javascript
 req.params.exemplo_de_parametro_de_rota = XXX
 ```
 
@@ -88,7 +88,7 @@ Para criar mais de um parâmetro, utiliza-se o *&*
 
 Para recuperar o parâmetro do servidor, usamos:
 
-```
+```javascript
 app.get (`./professores`, (req, res)=>{
   req.query;                        //armazena os parametros de consulta
   const {nome, stack} = req.query   // desestrutura os dados
@@ -104,7 +104,7 @@ Nesse exemplo, os parâmetros têm os seguintes valores:
 
 Controladores são funções que controlam o servidor. É a mesma função que usamos no método GET
 
-```
+```javascript
 get('./', funcaoControladora)
 ```
 
@@ -113,7 +113,7 @@ get('./', funcaoControladora)
 ### Como exportar as funções controladoras que estão escritas em outro arquivo?
 
 No arquivo onde estão as funções escreva:
-```
+```javascript
 module.exports = {
     funcao1,
     funcao2,
@@ -122,7 +122,7 @@ module.exports = {
 
 No arquivo ```index.js``` escreva:
 
-```
+```javascript
 const {funcao1, funcao2} = require("./controladores/funcoes.js");
 ```
 
@@ -132,7 +132,7 @@ const {funcao1, funcao2} = require("./controladores/funcoes.js");
 
 Para criar um intermediario independente usamos o método USE da biblioteca *express* . Nesse exemplo, antes de passar pela ```rota 1```, o intermediario ```app.use``` vai ser verificado.
 
-```
+```javascript
 app.use((req,res,next)=> {
    console.log('passei no primeiro intermediario')
    next()
@@ -145,7 +145,7 @@ app.get( ... rotas 1...)
 
 Também é possível chamar um intermediario dentro da rota. Nesse caso não usamos o método USE, e sim, uma função que entra como segundo arguento no método GET, antes da função controladora. 
 
-```
+```javascript
 const intermediarioDaRota (req, res, next) => {
    // código aqui
    next();
