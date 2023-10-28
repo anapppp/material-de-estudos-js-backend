@@ -24,8 +24,9 @@ Comandos                | Descrição
 `git remote add upstream https://github.com/REPOSITORIO`  |  para manter seu repositório local atualizado
 `git pull upstream main`  |  baixa e mescla as alterações no seu repositório local com base na branch main deste repositório original 
 `git --h`               | Help!
-`git push origin nome-da-branch`   |    faz o pull numa branch especifica. 
-`git push -u origin nome-da-branch`   |    faz o pull numa branch especifica, e configura essa branch para receber o `git push` automaticamente. 
+`git push origin nome-da-branch` |  faz o pull numa branch especifica. 
+`git push -u origin nome-da-branch`  |  faz o pull numa branch especifica, e configura essa branch para receber o `git push` automaticamente. 
+`git merge nome_da_sua_branch`  |  faz o merge de outra branch com a atual (cheque a branch que vc está, e se ela está atualizada com o servidor remoto)
 
 
 ##  Status no GIT
