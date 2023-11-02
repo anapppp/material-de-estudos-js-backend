@@ -8,7 +8,8 @@ Comandos                | Descrição
 `git status`            | mostra o status
 `git clone`             | clona o diretorio da nuvem pro computador
 `git commit -m "msg"`   | comita com mensagem
-`git commit --amend -m "nova mensagem"` | Altera um commit e atualiza os arquivos que estavam no stage
+`git commit --amend -m "nova mensagem"` | altera um commit e atualiza os arquivos que estavam no stage
+`git log --oneline`     | imprime informações sobre os commits mais recentes, como o carimbo de data/hora, o autor e uma mensagem de commit.
 `git push`              | empurra pra nuvem
 `git pull`              | puxar para a maquina
 `git init`              | inicializa um repositorio no seu computador (local)
