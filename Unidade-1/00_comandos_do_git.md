@@ -8,7 +8,8 @@ Comandos                | Descrição
 `git status`            | mostra o status
 `git clone`             | clona o diretorio da nuvem pro computador
 `git commit -m "msg"`   | comita com mensagem
-`git commit --amend -m "nova mensagem"` | Altera um commit e atualiza os arquivos que estavam no stage
+`git commit --amend -m "nova mensagem"` | altera um commit e atualiza os arquivos que estavam no stage
+`git log --oneline`     | imprime informações sobre os commits mais recentes, como o carimbo de data/hora, o autor e uma mensagem de commit.
 `git push`              | empurra pra nuvem
 `git pull`              | puxar para a maquina
 `git init`              | inicializa um repositorio no seu computador (local)
@@ -24,8 +25,9 @@ Comandos                | Descrição
 `git remote add upstream https://github.com/REPOSITORIO`  |  para manter seu repositório local atualizado
 `git pull upstream main`  |  baixa e mescla as alterações no seu repositório local com base na branch main deste repositório original 
 `git --h`               | Help!
-`git push origin nome-da-branch`   |    faz o pull numa branch especifica. 
-`git push -u origin nome-da-branch`   |    faz o pull numa branch especifica, e configura essa branch para receber o `git push` automaticamente. 
+`git push origin nome-da-branch` |  faz o pull numa branch especifica. 
+`git push -u origin nome-da-branch`  |  faz o pull numa branch especifica, e configura essa branch para receber o `git push` automaticamente. 
+`git merge nome_da_sua_branch`  |  faz o merge de outra branch com a atual (cheque a branch que vc está, e se ela está atualizada com o servidor remoto)
 
 
 ##  Status no GIT
