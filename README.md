@@ -44,6 +44,7 @@ Vamos lá!  🤓
   - [Autenticação e Criptografia](./Unidade-3/06_autenticacao_e_criptografia.md)
   - [Integração com API de terceiros](./Unidade-3/07_integracao_com_API_de_terceiros.md)
 - [Unidade 4](./Unidade-4/)
-  - [Query Bilder](./Unidade-4/query-builder.md)
+  - [Query Bilder](./Unidade-4/01-query-builder.md)
+  - [Deploy](./Unidade-4/02-deploy.md)
 
 -----
